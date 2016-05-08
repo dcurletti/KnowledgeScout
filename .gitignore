@@ -1,3 +1,6 @@
+#compiled files
+webpack-assets.json
+
 # db
 rethinkdb_data
 
