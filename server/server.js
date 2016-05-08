@@ -14,7 +14,7 @@ const apiRoutes = require('./routes/api_routes');
 const apiAuthRoutes = require('./routes/api_auth_routes');
 
 app.use('/api', apiAuthRoutes);
-app.use('/api', passport.authenticate('jwt', { session: false }), apiRoutes);
+app.use('/api', passport.authenticate('jwt', { session: false, failureRedirect: '/sign_in'}), apiRoutes);
 
 const server = require('http').Server(app);
 const port = process.env.PORT || 3000;
