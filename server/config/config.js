@@ -11,9 +11,9 @@ const environment = {
 
 module.exports = Object.assign({
   host: process.env.HOST || 'localhost',
-  port: process.env.PORT,
+  port: process.env.PORT || 3000,
   apiHost: process.env.APIHOST || 'localhost',
-  apiPort: process.env.APIPORT,
+  apiPort: process.env.APIPORT || 3030,
   app: {
     title: 'KnowledgeScout',
     description: 'A career growth tracker aimed at helping teams discover optimal routes for gaining knowledge.',
@@ -35,5 +35,4 @@ module.exports = Object.assign({
       ]
     }
   },
-
 }, environment);
