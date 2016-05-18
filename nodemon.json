@@ -1,4 +1,4 @@
 {
   "verbose": false,
-  "ignore": ["client", "node_modules", "rethinkdb_data"]
+  "ignore": ["node_modules", "rethinkdb_data"]
 }
